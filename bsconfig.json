@@ -1,0 +1,10 @@
+{
+  "name": "bs-react-transition-group",
+  "bs-dependencies": [
+    "reason-react"
+  ],
+  "sources": {
+      "dir": "src",
+      "subdirs": true
+  }
+}
