@@ -31,7 +31,11 @@ let make =
       ~in_=false,
       ~timeout: int,
       ~component="div",
-      ~className="",
+      ~className=?,
+      ~mountOnEnter=false,
+      ~unmountOnExit=false,
+      ~appear=false,
+      ~exit=true,
       children: state => ReasonReact.reactElement,
     ) =>
   ReasonReact.wrapJsForReason(
@@ -41,6 +45,10 @@ let make =
       "component": component,
       "timeout": timeout,
       "className": className,
+      "mountOnEnter": mountOnEnter,
+      "unmountOnExit": unmountOnExit,
+      "appear": appear,
+      "exit": exit,
     },
     (strState, _childProps) =>
     children(stateOfString(strState))

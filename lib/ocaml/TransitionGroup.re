@@ -2,8 +2,11 @@
 external transitionGroup: ReasonReact.reactClass = "TransitionGroup";
 let make =
     (
-      ~className="", 
+      ~className=?, 
       ~component="div", 
+      ~appear=false, 
+      ~enter=false, 
+      ~exit=false, 
       children
       ) =>
   ReasonReact.wrapJsForReason(
@@ -11,6 +14,9 @@ let make =
     ~props={
       "component": component,
       "className": className,
+      "appear": appear,
+      "enter": enter,
+      "exit": exit,
     },
     children,
   );
