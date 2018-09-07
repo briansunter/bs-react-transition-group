@@ -32,6 +32,7 @@ let make =
     (
       ~in_=false,
       ~timeout: int,
+      ~component="div",
       ~className=?,
       ~mountOnEnter=false,
       ~unmountOnExit=false,
@@ -43,6 +44,7 @@ let make =
     ~reactClass=transitionClass,
     ~props={
       "in": in_,
+      "component": component,
       "timeout": timeout,
       "className": className,
       "mountOnEnter": mountOnEnter,

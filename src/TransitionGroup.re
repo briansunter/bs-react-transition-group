@@ -1,13 +1,12 @@
 [@bs.module "react-transition-group"]
 external transitionGroup: ReasonReact.reactClass = "TransitionGroup";
-
 let make =
     (
       ~className=?, 
       ~component="div", 
-      ~appear=?, 
-      ~enter=?, 
-      ~exit=?, 
+      ~appear=false, 
+      ~enter=false, 
+      ~exit=false, 
       children
       ) =>
   ReasonReact.wrapJsForReason(

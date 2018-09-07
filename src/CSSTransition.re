@@ -1,5 +1,6 @@
 [@bs.module "react-transition-group"]
 external cssTransition: ReasonReact.reactClass = "CSSTransition";
+
 let make =
     (
       ~in_=false,
