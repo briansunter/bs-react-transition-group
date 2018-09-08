@@ -1045,11 +1045,14 @@ bs-platform@^4.0.5:
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-4.0.5.tgz#d4fd9bbdd11765af5b75110a5655065ece05eed6"
 
-bs-react-transition-group@0.1.11:
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/bs-react-transition-group/-/bs-react-transition-group-0.1.10.tgz#93c7d20b49cf80958a33d38b415bebc176a02ec5"
+bs-react-transition-group@0.1.14:
+  version "0.1.14"
+  resolved "https://registry.yarnpkg.com/bs-react-transition-group/-/bs-react-transition-group-0.1.14.tgz#6016576bc18fa1dac84d68c0bebc376f9f6d6d64"
   dependencies:
+    react "16.5.0"
+    react-dom "16.5.0"
     react-transition-group "^2.4.0"
+    reason-react "0.5.3"
 
 buffer-alloc-unsafe@^1.1.0:
   version "1.1.0"
@@ -3527,7 +3530,7 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-"react-dom@>=15.0.0 || >=16.0.0", react-dom@^16.2.0:
+react-dom@16.5.0, "react-dom@>=15.0.0 || >=16.0.0", react-dom@^16.2.0:
   version "16.5.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.5.0.tgz#57704e5718669374b182a17ea79a6d24922cb27d"
   dependencies:
@@ -3549,7 +3552,7 @@ react-transition-group@^2.4.0:
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
-"react@>=15.0.0 || >=16.0.0", react@^16.2.0:
+react@16.5.0, "react@>=15.0.0 || >=16.0.0", react@^16.2.0:
   version "16.5.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.5.0.tgz#f2c1e754bf9751a549d9c6d9aca41905beb56575"
   dependencies:
@@ -3601,7 +3604,7 @@ readdirp@^2.0.0:
     readable-stream "^2.0.2"
     set-immediate-shim "^1.0.1"
 
-reason-react@>=0.4.0:
+reason-react@0.5.3, reason-react@>=0.4.0:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/reason-react/-/reason-react-0.5.3.tgz#10601809742fd991109ec9d69ad4baf2c3f17540"
   dependencies:

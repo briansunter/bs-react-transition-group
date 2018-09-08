@@ -21,8 +21,16 @@ function make() {
           /* willUpdate */component[/* willUpdate */7],
           /* shouldUpdate */component[/* shouldUpdate */8],
           /* render */(function (self) {
-              return React.createElement("div", undefined, ReasonReact.element(undefined, undefined, Transition.make(self[/* state */1][/* start */0], 300, undefined, undefined, (function (animationState) {
-                                    return "AnimationState: " + Transition.stringOfState(animationState);
+              return React.createElement("div", undefined, ReasonReact.element(undefined, undefined, Transition.make(self[/* state */1][/* start */0], 600, undefined, undefined, (function (animationState) {
+                                    if (animationState !== 1) {
+                                      if (animationState !== 0) {
+                                        return "State: " + Transition.stringOfState(animationState);
+                                      } else {
+                                        return "State: Entering";
+                                      }
+                                    } else {
+                                      return "State: Entered";
+                                    }
                                   }))), React.createElement("button", {
                               disabled: self[/* state */1][/* start */0],
                               onClick: (function () {

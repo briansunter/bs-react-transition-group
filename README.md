@@ -22,9 +22,13 @@ let make = (_children) => {
     },
   render: self =>
   <div>
-    <Transition timeout=300 in_=self.state.start>
+    <Transition timeout=600 in_=self.state.start>
     ...((animationState) =>
-      (ReasonReact.string("AnimationState: " ++ Transition.stringOfState(animationState)))
+    switch(animationState) {
+    | Transition.Entering => (ReasonReact.string("State: " ++ "Entering"))
+    | Transition.Entered => (ReasonReact.string("State: " ++ "Entered"))
+    | _ => (ReasonReact.string("State: " ++ Transition.stringOfState(animationState)))
+    }
     )
       </Transition>
     <button onClick=(_ => self.send(Start)) disabled={self.state.start}>
@@ -35,4 +39,5 @@ let make = (_children) => {
     </button>
     </div>
 };
+
 ``` 
