@@ -1,6 +1,7 @@
 {
   "name": "bs-react-transition-group",
-  "version": "0.1.12",
+  "homepage": "https://github.com/briansunter/bs-react-transition-group",
+  "version": "0.1.13",
   "scripts": {
     "clean": "bsb -clean-world",
     "build": "bsb -make-world",

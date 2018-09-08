@@ -16,7 +16,7 @@ let make = (_children) => {
     },
   render: self =>
   <div>
-    <Transition timeout=300 in_=self.state.start>
+    <Transition timeout=600 in_=self.state.start>
     ...((animationState) =>
       (ReasonReact.string("AnimationState: " ++ Transition.stringOfState(animationState)))
     )
